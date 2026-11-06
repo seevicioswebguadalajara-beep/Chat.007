@@ -75,7 +75,7 @@ def handle_messages():
                 r = requests.post(
                     db_url(),
                     headers={**HEADERS, "Prefer": "return=representation"},
-                    json={"sender": sender, "text": text},
+                    json={"sender": sender, "text": text, "time": hora},  # <-- Se añadió "time": hora
                     timeout=10,
                 )
                 r.raise_for_status()
