@@ -13,7 +13,7 @@ participants = {
     "rosa": {"label": "Rosa", "last_seen": 0, "typing_until": 0},
     "azul": {"label": "Azul", "last_seen": 0, "typing_until": 0},
 }
-SECRET_PASSWORD = os.environ.get("APP_PASSWORD", "0220").strip()
+SECRET_PASSWORD = os.environ.get("APP_PASSWORD", "0707").strip()
 PRESENCE_TIMEOUT = 25
 TZ = ZoneInfo(os.environ.get("APP_TZ", "America/Mexico_City"))
 
